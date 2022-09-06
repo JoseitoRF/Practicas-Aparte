@@ -1,0 +1,14 @@
+{
+  "name": "practicas-aparte",
+  "version": "1.0.0",
+  "description": "practicas",
+  "main": "index.js",
+  "scripts": {
+    "test": "try"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}

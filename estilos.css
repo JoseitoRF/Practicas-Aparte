@@ -1,0 +1,327 @@
+*{
+    font-family: "Lato", sans-serif;
+    color: #fff;
+}
+
+:root{
+    --tamaño-del-titulo:3.2em;
+    --tamaño-del-subtitulo: 2.5em;
+    --tamaño-del-parrafo:1.2em;
+}
+h2{
+    font-size: 2.2em; 
+}
+p{
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: .9em;
+}
+ul{
+    list-style: none;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width:100vw;
+}
+header{
+    flex-grow: 1;
+}
+.fondoNSC-1{
+    height:32em;
+    background-image: url(Img/entrada\ principal\ nsc.jpg);
+    background-size:100% 32em;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    flex-grow: 1;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height:32em;
+    background-color: rgba(0, 0, 0, .5)
+
+}
+.nav__cabecera{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 2em 5em;
+    width: 100%;
+}
+.nav__cabecera h3{
+    font-size: 2.2em;
+    display: none;
+}
+.nav__cabecera i{
+    font-size: 1.6em;
+}
+.nav__cabecera i:hover{
+    color: #777;
+}
+.nav__Encabezado{
+    margin-top: 100px;
+    width: 100vw;
+} 
+.nav h6{
+    border-bottom: 3px solid #fff;
+    width: 20em;
+    padding-left:42px;
+    font-size: .8em;
+    font-weight: 550;
+    letter-spacing: 1px;
+}
+.nav h1{
+    margin-left: 42px;
+    margin-right: 15em;
+    font-size:2.8em;
+}
+.drop-down-menu{
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px 0 10px 10px;
+    display: none;
+}
+
+.drop-down-menu ul{
+    padding: 5px;
+    margin: 15px;
+}
+.drop-down-menu i{
+    color: #000;
+    font-size: small;
+    position: relative;
+    left: 90%;
+}
+.drop-down-menu li{
+    margin-top: 15px;
+}
+.drop-down-menu li a{
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+}
+.drop-down-menu li a:hover{
+    font-weight: 700;
+    color: #06c;
+}
+.drop-down-menu i:hover{
+    font-weight: 900;
+    color: #a00;
+}
+
+article{
+    flex-grow:2 ;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+}
+#bienvenida{
+    background-color: #fff;
+    padding: 2em;
+    flex-grow: 1;
+}
+#bienvenida h2, #bienvenida p {
+    color: #000;
+    margin: 30px;
+}
+
+#Mision{
+    background-color: #000;
+    padding:2em;
+    flex-grow: 1;
+}
+#Mision h2, #Mision p {
+    color: #fff;
+    margin: 30px;
+}
+#vision{
+    width: 100% ;
+    height: 24em;
+    flex-grow: 1;
+    text-align: start;
+    background-image: url(https://elnuestra.online/pluginfile.php/1/theme_moove/sliderimage3/1614553987/slide03.jpg);
+    background-size:100% 24em;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    margin-bottom: 20px;
+}
+#vision h2, #vision p {
+    color: #fff;
+    margin: 30px 0;
+}
+.fondoNSC-2{
+    padding: 4em;
+    height:24em;
+    background-color: rgba(62, 115,193, .9);
+}
+
+#ofrecemos{
+    background-color: #fff;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 4em;
+    flex-grow: 1;
+}
+#ofrecemos h2{
+    margin-bottom: 1.5em;
+    color: #000;
+}
+#ofrecemos h4{
+    font-size: 1.3em ;
+}
+#ofrecemos h4, #ofrecemos p{
+    color: #000;
+    margin: 1.2em;
+}
+.Tarjeta-container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Tarjeta-container__Tarjetas{
+    flex-grow: 1;
+    background-color: #fff;
+    min-width: 200px;
+    width: 300px;
+    min-height: 300px;
+    margin: 15px  ;
+    box-shadow: 2px 1px 12px #000;
+    border-radius: 3px;
+    padding: 10px;
+}
+.Tarjeta-container__Tarjetas:hover{
+    background-color: #666;
+    color: #fff;
+}
+#ofrecemos div:hover > h4{
+    color:#fff;
+}
+#ofrecemos div:hover > p{
+    color:#fff;
+}
+.Tarjeta-container__Tarjetas__img img{
+    width: 100%;
+    height: 9em;
+    object-fit: cover;
+    object-position: center;
+}
+#Estadisticas{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #000;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#Estadisticas div{
+    font-size: 2.5em; 
+    margin-top: 40px; 
+}
+#Estadisticas a{
+    width:50%;
+}
+#Estadisticas div h6:last-child{
+    font-weight: 100;
+}
+#Estadisticas h6{
+    margin-top: 5px;
+}
+.boton__boton-azul{
+    text-decoration: none; 
+    background-color: #0e5099;
+    border-radius: 2em;
+    padding: 10px;
+    margin: 20px 10px;
+    width:100%;
+    grid-area: 2/2;
+}
+.boton__boton-azul:hover{
+    background-color: #fff;
+    color:#0e5099 ;
+}
+
+/* hasta aqui */
+footer{
+    flex-grow: 1;
+}
+footer ul{
+    margin: 3%;
+}
+
+footer ul li, footer i{
+    color: #666666;
+    margin: 10px;
+}
+footer i{
+    font-size: 2em;
+    margin-left: -5px;
+}
+
+@media only screen and (min-width:800px){
+    h2{
+        font-size: var(--tamaño-del-subtitulo); 
+    }
+    p{
+        font-size: var(--tamaño-del-parrafo);
+    }
+    .nav__cabecera{
+        justify-content: space-between;
+        margin: 2em 7em;
+    }
+    .nav__cabecera h3{
+        display: block;
+    }
+    .nav h1{
+        font-size:var(--tamaño-del-titulo);
+        margin-left: 112px;
+    }
+    .nav h6{
+        padding-left:112px;
+        font-size: 1.1em;
+        width: 21em;
+    }
+    .Tarjeta-container{
+        flex-direction: row;
+    }
+    .Tarjeta-container__Tarjetas{
+        min-height: 430px;
+    }
+    #ofrecemos h2{
+        margin-bottom: 1.8em;
+    }
+    #ofrecemos h4{
+        font-size: 1.6em ;
+    }
+    #ofrecemos h4, #ofrecemos p{
+        margin: 1.5em;
+    }
+    #Estadisticas{
+        display: grid;
+        grid-template-columns: repeat(3, minmax(100px,1fr));
+        grid-template-rows: repeat(auto-fit, minmax(200px,1fr));
+        grid-auto-rows: 50px;
+        grid-auto-flow: row;
+        width: 100%;
+        padding: 100px 0 80px 0;
+        align-items: center;
+        justify-items: center;
+    }
+    #Estadisticas a{
+        width:100%;
+    }
+}
+@media only screen and (min-width:1036px){
+    .Tarjeta-container__Tarjetas{
+        min-height: 375px;
+    }
+}

@@ -4,10 +4,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aprendiendo CSS</title>
+    <link rel="icon" href="Img/logoNSC.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="node_modules\normalize.css\normalize.css">
+    <link rel="stylesheet" href="estilosIngreso-Registro-Rc-contraseña.css">
+    <script src="https://kit.fontawesome.com/477b3bf19f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1 type="text" class="titulo tutu">hola</h1>
+    <div class="container ">
+        <header class="fondoNSC-1">
+            <nav class="nav">
+                <div class="nav__cabecera">
+                    <h3>NSC</h3>
+                    <i id="icon-window" class="fa-brands fa-windows"></i>
+                    <div  id="s"class="drop-down-menu">
+                        <i class="fa-solid fa-x"></i>
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="Ingresar.html">Ingresar</a> </li>
+                            <li><a href="Admision.html">Admision</a> </li>
+                            <li><a href="SobreNosotros.html">Sobre Nosotros</a> </li>
+                            <li><a href="Contactanos.html">Contactos</a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav__Encabezado">   
+                    <h1>CONTACTO </h1>
+                </div>
+            </nav>
+        </header>
+
+        <article>
+
+            <section>
+                <h6>Ponte en contacto</h6>
+                <h2>Envianos un mensaje</h2>
+                <form >
+                    <div class="Form__1">
+                        <div>
+                            <label>Nombre</label>
+                            <input autofocus type="text"  placeholder="Ingrese su nombre" >
+                        </div>
+                        <div>
+                            <label>Apellido</label>
+                            <input type="email" placeholder="Ingrese su apellido" >
+                        </div>
+                    </div>
+                    <div>
+                        <label>Correo</label>
+                        <input type="email" placeholder="Ingrese su correo" >
+                    </div>
+                    <div>
+                        <label>¿Como podemos ayudarte?</label>
+                        <input autofocus type="text"  placeholder="Ingrese su usuario" >
+                    </div>
+                    <input type="submit" value="Acceder">
+                </form>
+            </section>
+
+            <section class="info">
+
+                <div>
+                    <h5>Direccion</h5>
+                    <p>Urb.Castillejo;Calle G Guatire. Edif U.E "Nuestra Señora del Camino". Guatire - Edo. Miranda.</p>
+                </div>
+
+                <div>
+                    <h5>Horarios</h5>
+                    <p>Lunes a Viernes de 7am a 12pm</p>
+                </div>
+
+                <div>
+                    <h5>Telefonos</h5>
+                    <p>0212-347-1110</p>
+                    <p>0212-347-2667</p>
+                </div>   
+
+                <div>
+                    <h5>Gmail</h5>
+                    <p>aulasvirtualesnsc@gmail.com</p>
+                </div>
+
+            </section>
+
+        </article>
+    
+        <footer>
+            <ul>
+                <li>aulasvirtualesnsc@gmail.com</li>
+                <li>Estado Miranda. Guatire.</li>
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""> <i class="fa-brands fa-square-instagram"></i></a>
+                </li>
+            </ul>
+        </footer>
+    </div>
     <script src="Nsc.js"></script>
 </body>
 </html>

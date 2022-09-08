@@ -28,9 +28,9 @@ header{
     flex-grow: 1;
 }
 .fondoNSC-1{
-    height:32em;
+    height:35em;
     background-image: url(Img/entrada\ principal\ nsc.jpg);
-    background-size:100% 32em;
+    background-size:100% 35em;
     background-attachment: fixed;
     background-repeat: no-repeat;
     flex-grow: 1;
@@ -39,7 +39,7 @@ header{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    height:32em;
+    height:35em;
     background-color: rgba(0, 0, 0, .5)
 
 }
@@ -54,6 +54,9 @@ header{
     font-size: 2.2em;
     display: none;
 }
+.desaparece{
+    display: none;
+}
 .nav__cabecera i{
     font-size: 1.6em;
 }
@@ -61,8 +64,11 @@ header{
     color: #777;
 }
 .nav__Encabezado{
-    margin-top: 100px;
+    margin-top: 145px;
     width: 100vw;
+} 
+.nav__Encabezado2{
+    margin-top: -90px;
 } 
 .nav h6{
     border-bottom: 3px solid #fff;
@@ -81,7 +87,6 @@ header{
     background-color: #fff;
     padding: 25px;
     border-radius: 10px 0 10px 10px;
-    display: none;
 }
 
 .drop-down-menu ul{
@@ -110,6 +115,7 @@ header{
     font-weight: 900;
     color: #a00;
 }
+
 
 article{
     flex-grow:2 ;
@@ -276,6 +282,7 @@ footer i{
     }
     .nav__cabecera{
         justify-content: space-between;
+        align-items: flex-start;
         margin: 2em 7em;
     }
     .nav__cabecera h3{

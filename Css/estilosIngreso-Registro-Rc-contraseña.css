@@ -235,6 +235,13 @@ footer i{
     font-size: 2em;
     margin-left: -5px;
 }
+.ERROR{
+    background-color: rgba(255, 0, 0, 0.398);
+    padding: 15PX;
+    border-radius: 8px;
+    width: 350px;
+    margin-bottom: 15px;
+}
 @media only screen and (min-width:800px){
     
     .nav__cabecera{

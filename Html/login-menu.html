@@ -5,22 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprendiendo CSS</title>
-    <link rel="icon" href="Img/logoNSC.ico">
+    <link rel="icon" href="../Img/logoNSC.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="node_modules\normalize.css\normalize.css">
-    <link rel="stylesheet" href="login-menu.css">
+    <link rel="stylesheet" href="../node_modules\normalize.css\normalize.css">
+    <link rel="stylesheet" href="../Css/login-menu.css">
     <script src="https://kit.fontawesome.com/477b3bf19f.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
+    <aside id="fondo">
+        <h3>NSC</h3>
+        <h4>08/10</h4>
+    </aside>
     <article>
-
-        <section>
-            <h3>NSC</h3>
-            <div class="container">
-
+        <section class="container">
                 <div class="container__opciones">
                     <ul>
                         <li>
@@ -31,23 +31,23 @@
                             <a class="no-focus" href="">Alumno</a>
                         </li>
 
-                        <li><a href=""><i class="fa-light fa-house-blank"></i>Inicio</a></li>
-                        <li><a href=""><i class="fa-thin fa-database"></i>Clases</a></li>
-                        <li><a href=""><i class="fa-thin fa-calendar-week"></i>Horario y cronogramas</a></li>
-                        <li><a href=""><i class="fa-thin fa-circle-check"></i>Calificaciones</a></li>
-                        <li><a href=""><i class="fa-thin fa-user"></i>Administracion</a></li>
+                        <li id="Inicio" ><a href="#"><i class="fas fa-house"></i>Inicio</a></li>
+                        <li id="Clases"><a href="#"><i class="fas fa-database"></i>Clases</a></li>
+                        <li id="Horario"><a href="#"><i class="fas fa-calendar-week"></i>Horario y cronogramas</a></li>
+                        <li id="Calificacion"><a href="#"><i class="fas fa-circle-check"></i>Calificaciones</a></li>
+                        <li id="Administracion"><a href="#"><i class="fas fa-user"></i>Administracion</a></li>
+                        <li id="SALIR"><a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i>Salir</a></li>
+
                     </ul>
                 </div>
 
                 <div class="container__contenido">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis totam eum quas molestiae adipisci harum sint distinctio ipsam sunt minima ab rerum eveniet delectus illo, dolorem repellat incidunt veniam neque?</p>
+                    <!-- <h2>Hola,Vanessa Rojas</h2> -->
                 </div>
-
-            </div>
         </section>
 
     </article>
-    
-    <script src="Nsc.js"></script>
+    <script src="../Js/login.js"></script>
+    <script src="../Js/Nsc.js"></script>
 </body>
 </html>

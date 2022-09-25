@@ -29,7 +29,7 @@ header{
 }
 .fondoNSC-1{
     height:35em;
-    background-image: url(Img/entrada\ principal\ nsc.jpg);
+    background-image: url(../Img/entrada\ principal\ nsc.jpg);
     background-size:100% 35em;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -106,6 +106,8 @@ header{
     color: #000;
     font-weight: 500;
     text-decoration: none;
+    animation: menuElementos 0.2s ease-in-out 0s 1 backwards;
+
 }
 .drop-down-menu li a:hover{
     font-weight: 700;
@@ -332,3 +334,21 @@ footer i{
         min-height: 375px;
     }
 }
+
+@keyframes menuElementos {
+    0%{
+        color: #fff;
+    }
+    100%{
+        display: block;
+        color:#000
+    }
+}
+@keyframes menu {
+    0%{
+        height: 0%;
+    }
+    100%{
+        height: 100%;
+    }
+};

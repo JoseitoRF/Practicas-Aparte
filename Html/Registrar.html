@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprendiendo CSS</title>
-    <link rel="icon" href="Img/logoNSC.ico">
+    <link rel="icon" href="../Img/logoNSC.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="node_modules\normalize.css\normalize.css">
-    <link rel="stylesheet" href="estilosIngreso-Registro-Rc-contraseña.css">
+    <link rel="stylesheet" href="../node_modules\normalize.css\normalize.css">
+    <link rel="stylesheet" href="../Css/estilosIngreso-Registro-Rc-contraseña.css">
     <script src="https://kit.fontawesome.com/477b3bf19f.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -19,9 +19,9 @@
             <nav class="nav">
                 <div class="nav__cabecera">
                     <h3>NSC</h3>
-                    <i id="icon-window" class="fa-brands fa-windows"></i>
-                    <div  id="s"class="drop-down-menu">
-                        <i class="fa-solid fa-x"></i>
+                    <i id="icon-window" class="fa-brands fa-windows  boton menu"></i>
+                    <div  id="drop-menu"class="drop-down-menu  desaparece menu">
+                        <i id="i-exist" class="fa-solid fa-x  boton"></i>
                         <ul>
                             <li><a href="index.html">Inicio</a></li>
                             <li><a href="Ingresar.html">Ingresar</a> </li>
@@ -32,29 +32,39 @@
                     </div>
                 </div>
                 <div class="nav__Encabezado">   
-                    <h1>¿OLVIDASTE TU CONTRASEÑA? </h1>
+                    <h1>CREA TU CUENTA </h1>
                 </div>
             </nav>
         </header>
 
         <article>
             <section>
-                <form class="desaparecer">
+                <form >
+                    <div class="Form__1">
+                        <div>
+                            <label>Nombre</label>
+                            <input autofocus type="text"  placeholder="Ingrese su nombre" >
+                        </div>
+                        <div>
+                            <label>Apellido</label>
+                            <input type="email" placeholder="Ingrese su apellido" >
+                        </div>
+                    </div>
+                    <div>
+                        <label>Telefono</label>
+                        <input autofocus type="text"  placeholder="Ingrese su telefono" >
+                    </div>
                     <div>
                         <label>Correo</label>
                         <input type="email" placeholder="Ingrese su correo" >
-                        <p>Debe ingresar el correo empleado en el registro de la cuenta para que su recuperacion sea procesada correctamente.</p>
                     </div>
-                    <input type="submit" value="Recuperar">
-                </form>
-                <form class="aparecer">
                     <div>
-                        <label>Nueva contraseña</label>
+                        <label>Usuario</label>
+                        <input autofocus type="text"  placeholder="Ingrese su usuario" >
+                    </div>
+                    <div>
+                        <label>Contraseña</label>
                         <input type="password" placeholder="Ingrese su contraseña" >
-                    </div>
-                    <div>
-                        <label>Confirmar contraseña</label>
-                        <input type="password" placeholder="Confirme su contraseña" >
                     </div>
                     <input type="submit" value="Acceder">
                 </form>
@@ -72,6 +82,6 @@
             </ul>
         </footer>
     </div>
-    <script src="Nsc.js"></script>
+    <script src="../Js/Nsc.js"></script>
 </body>
 </html>

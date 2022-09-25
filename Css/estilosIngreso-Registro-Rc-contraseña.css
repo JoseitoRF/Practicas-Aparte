@@ -32,11 +32,25 @@ p{
 ul{
     list-style: none;
 }
+body{
+    position: relative;
+}
+.Sombra{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    z-index: 0;
+}
 .container{
     display: flex;
     flex-direction: column;
     width:100vw;
     background-color: #000;
+}
+.container-azul{
+    background-color: #06b;
+
 }
 header{
     flex-grow: 1;
@@ -68,11 +82,17 @@ header{
 .nav__cabecera i:hover{
     color: #777;
 }
+.desaparece{
+    display: none;
+}
 .nav__Encabezado{
     margin-top: 100px;
     width: 100vw;
 } 
-
+.nav__Encabezado2{
+    /* margin-top: -90px; */
+    margin-top:-130px
+} 
 .nav h1{
     margin-left: 52px;
     width: 25%;
@@ -82,7 +102,8 @@ header{
     background-color: #fff;
     padding: 25px;
     border-radius: 10px 0 10px 10px;
-    display: none;
+    position: relative;
+    z-index: 10;
 }
 
 .drop-down-menu ul{
@@ -102,6 +123,8 @@ header{
     color: #000;
     font-weight: 500;
     text-decoration: none;
+    animation: menuElementos 0.2s ease-in-out 0s 1 backwards;
+
 }
 .drop-down-menu li a:hover{
     font-weight: 700;
@@ -125,21 +148,19 @@ article{
 a{
     text-decoration: none;
 }
-section {
- text-align: center;
+.section-contacto h2{
+    text-align: center;
 }
 section p a{
     font-weight: 700;
     margin-left: 40px;
     border-bottom: 3px solid #000;
 }
-
-form{
+.formulario-contacto,#Login,.formulario-Registrar,.formulario-Rc_contraseña{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-basis: 100%;
     flex-wrap: nowrap;
     width: 100%;
 }
@@ -257,6 +278,9 @@ footer i{
 }
 
 @media only screen and (min-width:900px){
+    .article-Ingresar,.article-Registrar,.article-Rc_contraseña{
+        justify-content: center
+    }
     article{
         flex-direction: row-reverse;
         align-items: flex-start;
@@ -292,3 +316,21 @@ footer i{
     }
     
 }
+
+@keyframes menuElementos {
+    0%{
+        color: #fff;
+    }
+    100%{
+        display: block;
+        color:#000
+    }
+}
+@keyframes menu {
+    0%{
+        height: 0%;
+    }
+    100%{
+        height: 100%;
+    }
+};

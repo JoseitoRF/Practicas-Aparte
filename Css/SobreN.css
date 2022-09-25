@@ -10,6 +10,7 @@
 }
 body{
     background-color: #000;
+    position: relative;
 }
 h2{
     font-size: 2.2em; 
@@ -29,10 +30,20 @@ header{
     background-color: #000;
     width:100vw;
 }
+.Sombra{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    z-index: 0;
+}
 .fondoNSC-1{
     height:25em;
     background-color: #000;
     flex-grow: 1;
+}
+.desaparece{
+    display: none;
 }
 .nav{
     display: flex;
@@ -61,6 +72,11 @@ header{
 .nav__Encabezado{
     width: 100vw;
 } 
+.nav__Encabezado2{
+    /* margin-top: -90px; */
+    margin-top:-200px;
+
+} 
 .nav h1{
     margin-left: 22px;
     margin-right: 15em;
@@ -71,7 +87,8 @@ header{
     background-color: #fff;
     padding: 25px;
     border-radius: 10px 0 10px 10px;
-    display: none;
+    position: relative;
+    z-index: 10;
 }
 
 .drop-down-menu ul{
@@ -91,6 +108,8 @@ header{
     color: #000;
     font-weight: 500;
     text-decoration: none;
+    animation: menuElementos 0.2s ease-in-out 0s 1 backwards;
+
 }
 .drop-down-menu li a:hover{
     font-weight: 700;
@@ -318,8 +337,25 @@ footer i{
 @media only screen and (min-width:1190px){
     .nav__Encabezado {
         width: 30vw;
-      }
-      .nav h1 {
+    }
+    .nav h1 {
         margin-left: 152px;
-      }
+    }
 }
+@keyframes menuElementos {
+    0%{
+        color: #fff;
+    }
+    100%{
+        display: block;
+        color:#000
+    }
+}
+@keyframes menu {
+    0%{
+        height: 0%;
+    }
+    100%{
+        height: 100%;
+    }
+};

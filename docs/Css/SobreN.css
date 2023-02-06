@@ -1,0 +1,361 @@
+*{
+    font-family: "Lato", sans-serif;
+    color: #fff;
+}
+
+:root{
+    --tamaño-del-titulo:3.2em;
+    --tamaño-del-subtitulo: 2.8em;
+    --tamaño-del-parrafo:1em;
+}
+body{
+    background-color: #000;
+    position: relative;
+}
+h2{
+    font-size: 2.2em; 
+}
+p{
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: .9em;
+}
+ul{
+    list-style: none;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    width:100vw;
+}
+.Sombra{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    z-index: 0;
+}
+.fondoNSC-1{
+    height:25em;
+    background-color: #000;
+    flex-grow: 1;
+}
+.desaparece{
+    display: none;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height:32em;
+    flex-grow: 1;
+}
+.nav__cabecera{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 2em 3em;
+    width: 100%;
+}
+.nav__cabecera h3{
+    font-size: 2.2em;
+    display: none;
+}
+.nav__cabecera i{
+    font-size: 1.6em;
+}
+.nav__cabecera i:hover{
+    color: #777;
+}
+.nav__Encabezado{
+    width: 100vw;
+} 
+.nav__Encabezado2{
+    /* margin-top: -90px; */
+    margin-top:-200px;
+
+} 
+.nav h1{
+    margin-left: 22px;
+    margin-right: 15em;
+    font-size:2.8em;
+}
+
+.drop-down-menu{
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px 0 10px 10px;
+    position: relative;
+    z-index: 10;
+}
+
+.drop-down-menu ul{
+    padding: 5px;
+    margin: 15px;
+}
+.drop-down-menu i{
+    color: #000;
+    font-size: small;
+    position: relative;
+    left: 90%;
+}
+.drop-down-menu li{
+    margin-top: 15px;
+}
+.drop-down-menu li a{
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+    animation: menuElementos 0.2s ease-in-out 0s 1 backwards;
+
+}
+.drop-down-menu li a:hover{
+    font-weight: 700;
+    color: #06c;
+}
+.drop-down-menu i:hover{
+    font-weight: 900;
+    color: #a00;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-repeat: no-repeat;
+    background-size: 100% 38em;
+    background-image: url(https://lh3.googleusercontent.com/p/AF1QipM58Tsd0RCibq7yS81-JTpGoko_gY51ex-JNx_i=s2560-w2560-h1118);
+}
+section{
+    background-color: #0009;
+}
+.section__1{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-end;
+    padding-top: 15em;
+}
+.section__1-div{
+    display: none;
+}
+.section__1 h3{
+    border-bottom: 3px solid #fff;
+    width: 15em;
+    padding-left:1em;
+    padding-bottom: 15px;
+    font-size: 1.2em;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.section__1 h2{
+    padding-left:1em;
+    font-size: var(--tamaño-del-subtitulo);
+    font-weight:bold;
+    letter-spacing: 1px;
+    margin-bottom: 8em;
+}
+
+.section__1-div p{
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.section__2{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -6%;
+}
+
+.section__2-div{
+    background-color: #06cc;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 65px 75px;
+    height: 25em;
+    direction: ltr;
+    margin-right: 4em;
+    
+}
+.section__2-div p{
+    margin-top: 10px;
+    font-weight: 500;
+}
+.section__2-Tarjeta {
+    width: 12em;
+    height: 12em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px; 
+    border-radius: 100%;
+}
+
+.section__2-Tarjeta img{
+    object-fit: cover;
+    border-radius: 100%;
+    object-position: top;
+    width: 100%;
+    height: 100%;
+}
+
+section:last-child{
+    margin-top: 0.5px;
+}
+.section__2-contenido{
+    flex-grow:1 ;
+    margin-bottom: 6em;
+}
+
+.section__2-contenido p:first-child{
+    margin-top: 1em;
+}
+.section__2-contenido p{
+    padding:10px 3em;
+}
+.section__2-imagenes{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    width: 300em;
+}
+.section__2-imagenes img{
+    flex-grow: 1;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* hasta aqui */
+footer{
+    display: flex;
+    background-color: #fff;
+}
+footer ul{
+    flex-grow: 1;
+    margin: 3%;
+}
+
+footer ul li, footer i{
+    color: #666666;
+    margin: 10px;
+}
+footer i{
+    font-size: 2em;
+    margin-left: -5px;
+}
+
+@media only screen and (min-width:800px){
+    h2{
+        font-size: var(--tamaño-del-subtitulo);
+        margin: 20px 0; 
+    }
+    p{
+        font-size: var(--tamaño-del-parrafo);
+        margin-bottom: 5px;
+    }
+        
+    aside div{
+        width: 33%;
+        margin-left: 100px;
+    }
+    .nav h1{
+        margin-left: 122px;
+    }
+    .nav__cabecera{
+        justify-content: space-between;
+        margin: 2em 5em;
+    }
+    .nav__cabecera h3{
+        display: block;
+        margin-left: 2.3em;
+    }
+ 
+    .section__1-div{
+        background-color: #06cb;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:flex-end;
+        width: 20em;
+        padding: 65px 75px;
+        height: 25em;
+        direction: ltr;
+        margin-top: -18em;
+        margin-right: 4em;
+    }
+    .section__1 h2{
+        margin-bottom: 33px;
+    }
+
+    .section__1-Tarjeta {
+        width: 10em;
+        height: 10em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px; 
+        border-radius: 100%;
+    }
+
+    .section__1-Tarjeta img{
+        object-fit: cover;
+        border-radius: 100%;
+        object-position: top;
+        width: 100%;
+        height: 100%;
+    }
+  
+    .section__1{
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .section__1-contenido{
+        margin-top:14em;
+    }
+    .section__2{
+        flex-wrap: nowrap;
+    }
+    .section__2-contenido p:first-child{
+        margin-top: 3em;
+    }
+    .section__2-div{
+        display: none;
+    }
+}
+
+@media only screen and (min-width:998px){
+    .section__1-div{
+        height: 30em;
+        margin-top: -20.5em;
+    }
+
+
+}
+@media only screen and (min-width:1190px){
+    .nav__Encabezado {
+        width: 30vw;
+    }
+    .nav h1 {
+        margin-left: 152px;
+    }
+}
+@keyframes menuElementos {
+    0%{
+        color: #fff;
+    }
+    100%{
+        display: block;
+        color:#000
+    }
+}
+@keyframes menu {
+    0%{
+        height: 0%;
+    }
+    100%{
+        height: 100%;
+    }
+};

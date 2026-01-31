@@ -73,42 +73,37 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/validate-js/2.0.1/validate.min.js" integrity="sha512-8GLIg5ayTvD6F9ML/cSRMD19nHqaLPWxISikfc5hsMJyX7Pm+IIbHlhBDY2slGisYLBqiVNVll+71CYDD5RBqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="Js/Nsc.js"></script>
     <script src=".Js/Ingresar.js"></script>
-        <script>
-        // Esperamos a que el documento cargue completamente
+      <script>
         document.addEventListener('DOMContentLoaded', function() {
-            
-            // 1. Seleccionamos los elementos del HTML
-            const botonMenu = document.getElementById('icon-window'); // El botón de Windows
-            const menu = document.getElementById('drop-menu');        // El menú desplegable
-            const botonCerrar = document.getElementById('i-exist');   // La X para cerrar
-            const sombra = document.querySelector('.Sombra');         // El fondo oscuro (opcional)
-        
-            // 2. Función para alternar el menú
-            function toggleMenu() {
-                // 'toggle' quita la clase si existe, o la agrega si no existe
-                menu.classList.toggle('desaparece');
-                
-                // Si quieres que la sombra también aparezca/desaparezca:
-                if(sombra) {
-                    sombra.classList.toggle('desaparece');
-                }
-            }
-        
-            // 3. Evento: Cuando hacen clic en el icono de Windows
-            botonMenu.addEventListener('click', toggleMenu);
-        
-            // 4. Evento: Cuando hacen clic en la X
-            if(botonCerrar) {
-                botonCerrar.addEventListener('click', toggleMenu);
-            }
-            
-            // 5. (Opcional) Cerrar si dan clic fuera del menú (en la sombra)
-            if(sombra) {
-                sombra.addEventListener('click', toggleMenu);
-            }
-        });
+    
+    // Seleccionamos los elementos
+    const botonVentana = document.getElementById('icon-window'); // El logo de Windows
+    const menuDesplegable = document.getElementById('drop-menu'); // El recuadro blanco
+    const botonCerrar = document.getElementById('i-exist');      // La X
+    const sombra = document.querySelector('.Sombra');            // El fondo oscuro
+
+    // Función para ABRIR el menú
+    function abrir() {
+        menuDesplegable.classList.remove('desaparece'); // Muestra el menú
+        botonVentana.classList.add('desaparece');       // OCULTA el botón de ventana
+        if(sombra) sombra.classList.remove('desaparece');
+    }
+
+    // Función para CERRAR el menú
+    function cerrar() {
+        menuDesplegable.classList.add('desaparece');    // Oculta el menú
+        botonVentana.classList.remove('desaparece');    // MUESTRA el botón de ventana
+        if(sombra) sombra.classList.add('desaparece');
+    }
+
+    // Asignamos los eventos
+    botonVentana.addEventListener('click', abrir);
+    if(botonCerrar) botonCerrar.addEventListener('click', cerrar);
+    if(sombra) sombra.addEventListener('click', cerrar);
+});
     </script>
 </body>
 
 </html>
+
 

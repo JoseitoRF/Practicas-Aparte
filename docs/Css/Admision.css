@@ -1,4 +1,4 @@
-*{
+f*{
     font-family: "Lato", sans-serif;
     color: #fff;
 }
@@ -115,7 +115,7 @@ body{
     color: #a00;
 }
 .desaparece{
-    display: none;
+    display: none !important;
 }
 .container{
     display: flex;
@@ -206,4 +206,5 @@ footer i{
     100%{
         height: 100%;
     }
+
 };
